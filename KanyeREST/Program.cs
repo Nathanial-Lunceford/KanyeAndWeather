@@ -11,7 +11,8 @@ internal class Program
         var swansonURL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
         var client = new HttpClient();
 
-        var weatherKey = "14789932b2c9c193737e7230a9deaa3e";
+        Console.WriteLine("Enter your Weather Key");
+        var weatherKey = Console.ReadLine();
 
         var weatherCall = $"https://api.openweathermap.org/data/2.5/weather?lat=30.2672&lon=-97.7431&appid={weatherKey}&units=imperial";
 
